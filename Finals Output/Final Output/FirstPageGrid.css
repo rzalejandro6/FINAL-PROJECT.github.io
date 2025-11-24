@@ -1,0 +1,14 @@
+body {
+    display: flex;                  /* Makes the body a flex container */
+    justify-content: center;        /* Centers the container horizontally on the page */
+    align-items: center;            /* Centers the container vertically on the page */
+    height: 100vh;                  /* Makes the body take the full height of the viewport */
+}
+
+.container {
+    display: grid;                  /* Makes the container a grid layout */
+    grid-template-rows: auto auto auto auto; /* Creates 4 rows, each sized automatically based on content */
+    justify-items: center;          /* Centers items horizontally within each grid row */
+    width: 80%;                     /* Container takes 80% of the page width */
+    max-width: 800px;               /* Limits container width to 800px */
+}

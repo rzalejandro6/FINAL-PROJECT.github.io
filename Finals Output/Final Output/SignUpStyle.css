@@ -1,0 +1,47 @@
+/* General font and body colors */
+body {
+    font-family: 'Arial', sans-serif;  /* Sets the font of the whole page to Arial */
+    color: #000000; /* Sets the default text color to black */
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;  /* Sets the size of <h1> headings */
+    margin: 0;         /* Removes default top/bottom margin */
+}
+
+/* Links */
+a {
+    color: #0048ff;       /* Sets the text color of links */
+    text-decoration: none; /* Removes the underline from links */
+    font-weight: bold;     /* Makes the link text bold */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline when user hovers over link */
+}
+
+/* Inputs common style */
+input {
+    background-color: #ffffff;  /* white background */
+    color: #000000;             /* black text so you can see what you type */
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #000000; /* Sets the color of placeholder text inside inputs to black */
+}
+
+/* Buttons common style */
+button {
+    transition: background-color 0.3s; /* Smooth animation when button background changes */
+}
+
+button:hover {
+    background-color: #6770a3; /* Changes button background to a lighter color on hover */
+}
+
+/* Links inside wrapper div spacing */
+.wrapper div a {
+    margin-top: 10px; /* Adds space above links inside a div within wrapper */
+}
