@@ -40,7 +40,7 @@ body::before {
 /* Footer style */
 footer {
     background-color: rgba(180, 178, 178, 0.7); /* semi-transparent footer */
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 footer p {
@@ -61,7 +61,7 @@ footer div img {
 
 /* Logo style */
 .logo-container img {
-    width: 1300px;
+    width: 1000px;
 }
 
 .logo-container h1 {

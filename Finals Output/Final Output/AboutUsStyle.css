@@ -36,6 +36,14 @@ body {
     color: #ffffff;
 }
 
+.about-text a {
+    color: #ffffff;
+}
+
+.about-text a:hover {
+    color: #b3b0b0;
+}
+
 
 /* ===========================
    FOOTER
