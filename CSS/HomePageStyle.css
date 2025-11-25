@@ -23,6 +23,9 @@ body::before {
 /* Top navigation links style */
 .top-nav {
     background-color: rgba(180, 178, 178, 0.7); /* semi-transparent header */
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 1.5rem;
 }
 
 .top-nav a {
@@ -30,11 +33,17 @@ body::before {
     font-weight: bold;
     color: #232835;
     text-decoration: none;
-    transition: color 0.3s;
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
 }
 
 .top-nav a:hover {
     color: #ffffff;
+    border-color: #000000;
+    background-color: #000000;
 }
 
 /* Footer style */

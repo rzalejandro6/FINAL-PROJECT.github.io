@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLIQUE Login</title>
+    <link rel="stylesheet" href="../CSS/FirstPageGrid.css">
+    <link rel="stylesheet" href="../CSS/FirstPageStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <div class="logo">
+               <img src="../Assets/Logo black tranparent.png" alt="Clique logo">
+            </div>
+            <p class="tagline">Discover iconic imagery and connect with fellow visual storytellers.</p>
+            <div class="cta-zone">
+                <div class="cta-panel active" id="cta-default">
+                    <div class="buttons-container">
+                        <button class="login" data-view="login">Log in</button>
+                        <button class="signin" data-view="signup">Sign up</button>
+                    </div>
+                </div>
+
+                <div class="cta-panel" id="cta-login" aria-hidden="true">
+                    <h2>Welcome back</h2>
+                    <form class="auth-form">
+                        <label for="inline-login-email">Email address</label>
+                        <input type="email" id="inline-login-email" placeholder="example@gmail.com" required>
+                        <label for="inline-login-password">Password</label>
+                        <input type="password" id="inline-login-password" placeholder="Password" required>
+                        <button type="submit" class="primary-btn">Access gallery</button>
+                    </form>
+                    <button class="secondary-btn" data-view="default">Back</button>
+                </div>
+
+                <div class="cta-panel" id="cta-signup" aria-hidden="true">
+                    <h2>Join Clique</h2>
+                    <form class="auth-form">
+                        <label for="inline-signup-email">Email address</label>
+                        <input type="email" id="inline-signup-email" placeholder="example@gmail.com" required>
+                        <label for="inline-signup-password">Password (max 12 characters)</label>
+                        <input type="password" id="inline-signup-password" placeholder="Password" maxlength="12" required>
+                        <button type="submit" class="primary-btn">Create account</button>
+                    </form>
+                    <button class="secondary-btn" data-view="default">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const panels = {
+            default: document.getElementById('cta-default'),
+            login: document.getElementById('cta-login'),
+            signup: document.getElementById('cta-signup')
+        };
+
+        document.addEventListener('click', (event) => {
+            const trigger = event.target.closest('[data-view]');
+            if (!trigger) return;
+
+            const target = trigger.getAttribute('data-view');
+            Object.entries(panels).forEach(([name, panel]) => {
+                if (!panel) return;
+                const isActive = name === target;
+                panel.classList.toggle('active', isActive);
+                panel.setAttribute('aria-hidden', (!isActive).toString());
+            });
+        });
+    </script>
+</body>
+</html>

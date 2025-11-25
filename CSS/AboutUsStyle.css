@@ -19,9 +19,9 @@ body {
 .top-nav {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 2rem;
     padding: 20px;
-    background-color: rgb(180, 178, 178, 0.7);
+    background-color: rgba(180, 178, 178, 0.7);
 }
 
 .top-nav a {
@@ -29,11 +29,18 @@ body {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s;
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
 }
 
-.top-nav a:hover {
+.top-nav a:hover,
+.top-nav a:focus {
     color: #ffffff;
+    border-color: #000000;
+    background-color: #000000;
 }
 
 .about-text a {
