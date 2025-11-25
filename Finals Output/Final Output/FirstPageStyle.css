@@ -1,11 +1,11 @@
 body {
     margin: 0;                     /* Removes default margin from the page */
-    background: #bebebe;           /* Sets page background to purple */
+    background: #727272;           /* Sets page background to purple */
     font-family: Arial, sans-serif;/* Sets the font for the page to Arial */
 }
 
 .container {
-    background: #ffffff;           /* Sets container background to a lighter purple */
+    background: #c4c4c4;           /* Sets container background to a lighter purple */
     padding: 100px;                /* Adds space inside the container */
     border-radius: 20px;           /* Rounds the corners of the container */
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
