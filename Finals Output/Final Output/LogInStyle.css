@@ -12,7 +12,7 @@ h1 {
 
 /* Links */
 a {
-    color: #0048ff;       /* Sets the text color of links to blue */
+    color: #000000;       /* Sets the text color of links to blue */
     text-decoration: none; /* Removes the default underline from links */
     font-weight: bold;     /* Makes the link text bold */
 }
@@ -38,7 +38,7 @@ button {
 }
 
 button:hover {
-    background-color: #6770a3; /* Changes button background to a lighter purple/blue when hovered */
+    background-color: #585d77; /* Changes button background to a lighter purple/blue when hovered */
 }
 
 /* Links inside wrapper div spacing */
