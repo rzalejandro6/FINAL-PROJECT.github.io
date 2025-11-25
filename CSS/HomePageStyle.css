@@ -6,6 +6,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative; /* needed for overlay */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Optional semi-transparent overlay */
@@ -20,30 +25,30 @@ body::before {
     z-index: -1; /* behind content */
 }
 
-/* Top navigation links style */
-.top-nav {
-    background-color: rgba(180, 178, 178, 0.7); /* semi-transparent header */
+/* Centered navigation for signed-in users */
+.home-nav {
     display: flex;
-    gap: 1rem;
-    padding: 0.75rem 1.5rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    position: relative;
+    z-index: 1; /* keep nav above the overlay */
 }
 
-.top-nav a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #232835;
+.home-nav a {
+    color: inherit;
     text-decoration: none;
-    display: inline-block;
-    padding: 0.35rem 0.85rem;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    transition: opacity 0.2s ease;
 }
 
-.top-nav a:hover {
-    color: #ffffff;
-    border-color: #000000;
-    background-color: #000000;
+.home-nav a:hover {
+    opacity: 0.8;
 }
 
 /* Footer style */
@@ -68,7 +73,7 @@ footer div img {
     height: auto;            /* maintain aspect ratio */
 }
 
-/* Logo style */
+/* Legacy styles retained in case other sections reuse this sheet */
 .logo-container img {
     width: 1000px;
 }
