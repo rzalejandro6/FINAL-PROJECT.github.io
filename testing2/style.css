@@ -1,0 +1,152 @@
+/* Reset and basic layout */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body, html { height: 100%; font-family: Arial, sans-serif; background: #f6f7fb; overflow: hidden; }
+
+/* Top navigation links style */
+.top-nav {
+    background-color: rgba(180, 178, 178, 0.7); /* semi-transparent header */
+}
+
+.top-nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #232835;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: #ffffff;
+}
+
+/* Viewport and columns */
+.viewport {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.column {
+  flex: 0 0 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-align: start;
+  padding: 40px 20px;
+  border-right: 1px solid #ccc;
+  background: #fff;
+}
+
+/* Header for each column */
+header.genre { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+header.genre h2 { font-size: 1.4rem; }
+header.genre p { font-size: 0.9rem; color: #555; }
+
+/* Photo stack */
+.stack { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
+/* Photo card */
+.photo-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.photo-card:hover { transform: scale(1.05); }
+
+.photo-card img {
+  width: 100%;
+  height: 300px; /* reduced vertical size */
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Caption */
+.caption { padding: 10px; font-size: 0.95rem; color: #222; }
+
+/* Likes & comments section */
+.like-comment {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+}
+.like-btn {
+  background: #232835;
+  color: #B6BDD0;
+  font-weight: bold;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.comments input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+.comments .comment-btn {
+  padding: 6px 10px;
+  background: #8C94A9;
+  color: #232835;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.comment-list {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.comment-list p {
+  background: #e0e4eb;       /* background for readability */
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #222;
+  word-wrap: break-word;
+}
+
+/* Navigation buttons */
+.nav-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px; height: 46px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 10;
+}
+.nav-btn.left { left: 12px; }
+.nav-btn.right { right: 12px; }
+
+/* Modal for enlarged image */
+.image-modal {
+  position: fixed;
+  display: none;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.image-modal img { max-width: 80%; max-height: 80%; border-radius: 10px; }
+

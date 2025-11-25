@@ -8,12 +8,19 @@ body {
     margin: 0;
 }
 
+.top-nav {
+    margin-bottom: 40px;
+}
 
-/* ===========================
-   ABOUT SECTION
-=========================== */
+.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 20px;
+    background-color: rgb(180, 178, 178, 0.7);
+}
 
-/* Main wrapper */
+
 .about-section {
     display: flex;
     flex-direction: column;
