@@ -1,0 +1,38 @@
+/* GLOBAL STYLES*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*TOP NAVIGATION*/
+.top-nav {
+    position: fixed;       /* Fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 20px;
+    background-color: rgba(180, 178, 178, 0.7);
+    z-index: 1000;
+}
+
+/* CONTAINER*/
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    background: #cecece;
+    text-align: center;
+    margin-top: 100px;  
+    /*space so nav doesn’t overlap content*/
+}
+

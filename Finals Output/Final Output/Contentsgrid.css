@@ -1,3 +1,4 @@
+/*GLOBAL LAYOUT*/
 body {
     display: grid;
     grid-template-rows: auto 1fr auto; /* top-nav / main content / footer */
@@ -5,33 +6,34 @@ body {
     margin: 0;
 }
 
-.top-nav {
-    margin-bottom: 40px;
-}
-
+/*TOP NAVIGATION*/
 .top-nav {
     display: flex;
     justify-content: center;
     gap: 200px;
     padding: 20px;
-    background-color: rgb(180, 178, 178, 0.7);
+    margin-bottom: 40px;
+    background-color: rgba(180, 178, 178, 0.7);
 }
 
+/* VIEWPORT (MAIN CONTENT AREA)*/
 .viewport {
-  display: flex;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
+/* COLUMN*/
 .column {
-  flex: 0 0 100vw;
-  overflow-y: auto;
+    flex: 0 0 100vw;  /* Each column takes full viewport width */
+    overflow-y: auto;
 }
 
+/*STACK OF PHOTOS*/
 .stack {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
 }

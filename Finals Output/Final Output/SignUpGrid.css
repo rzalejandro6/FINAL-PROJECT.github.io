@@ -1,48 +1,54 @@
+/* Body setup */
 body {
-    display: flex;                  /* Makes the body a flex container */
-    justify-content: center;        /* Centers the wrapper horizontally on the page */
-    align-items: center;            /* Centers the wrapper vertically on the page */
-    height: 100vh;                  /* Makes body take full height of the viewport */
-    margin: 0;                      /* Removes default margin from the body */
-    background-color: #bebebe;      /* Sets the page background to a light gray */
+    display: flex;                  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;                  
+    margin: 0;
+    background-color: #bebebe;      
 }
 
+/* Wrapper styling */
 .wrapper {
-    display: grid;                  /* Makes the wrapper a grid container */
-    grid-template-rows: auto auto auto auto; /* Creates four rows sized automatically */
-    justify-items: center;          /* Centers the items horizontally inside each grid row */
-    row-gap: 20px;                  /* Adds 20px vertical space between each row */
-    width: 80%;                     /* Wrapper takes up 80% of the page width */
-    max-width: 400px;               /* Limits wrapper width to 400px */
-    padding: 20px;                  /* Adds inner spacing inside the wrapper */
-    background-color: #adadad;      /* Sets wrapper background color to gray */
-    border-radius: 12px;            /* Rounds the corners of the wrapper */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Adds shadow for depth */
+    display: grid;                  
+    grid-template-rows: auto auto auto auto; /* 4 automatic rows */
+    justify-items: center;          
+    row-gap: 20px;                  
+    width: 80%;                     
+    max-width: 400px;               
+    padding: 20px;                  
+    background-color: #adadad;      
+    border-radius: 12px;            
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+/* Signup form layout */
 .signup-form {
-    display: grid;                  /* Makes the signup form a grid container */
-    justify-items: center;          /* Centers input fields and button horizontally */
-    row-gap: 15px;                  /* Adds vertical space between form elements */
-    width: 100%;                    /* Form takes full width of wrapper */
+    display: grid;                  
+    justify-items: center;          
+    row-gap: 15px;                  
+    width: 100%;                    
 }
 
+/* Input fields */
 .signup-form input {
-    width: 100%;                    /* Input fields take full width of the form */
-    padding: 10px;                  /* Adds space inside the inputs */
-    border-radius: 8px;             /* Rounds corners of inputs */
-    border: none;                   /* Removes default input borders */
-    font-size: 1rem;                /* Sets font size of input text */
+    width: 100%;                    
+    padding: 10px;                  
+    border-radius: 8px;             
+    border: none;                   
+    font-size: 1rem;                
 }
 
+/* Submit button */
 .signup-form button {
-    width: 100%;                    /* Button takes full width of the form */
-    padding: 12px;                  /* Adds space inside button */
-    border: none;                   /* Removes default border */
-    border-radius: 8px;             /* Rounds corners of button */
-    font-weight: bold;              /* Makes button text bold */
-    font-size: 1rem;                /* Sets button text size */
-    cursor: pointer;                /* Changes cursor to pointer on hover */
-    background-color: #232835;      /* Sets button background color */
-    color: #B6BDD0;                 /* Sets button text color */
+    width: 100%;                    
+    padding: 12px;                  
+    border: none;                   
+    border-radius: 8px;             
+    font-weight: bold;              
+    font-size: 1rem;                
+    cursor: pointer;                
+    background-color: #232835;      
+    color: #B6BDD0;                 
 }
+

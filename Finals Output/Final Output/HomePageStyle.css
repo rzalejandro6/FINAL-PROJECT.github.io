@@ -1,4 +1,4 @@
-/* Page background */
+/*PAGE BACKGROUND*/
 body {
     font-family: Arial, sans-serif;
     background-image: url('1BackGround Image.jpg'); /* replace with your image */
@@ -8,7 +8,7 @@ body {
     position: relative; /* needed for overlay */
 }
 
-/* Optional semi-transparent overlay */
+/* Optional semi-transparent overlay for readability */
 body::before {
     content: "";
     position: absolute;
@@ -16,10 +16,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3); /* adjust for readability */
+    background-color: rgba(0,0,0,0.3);
     z-index: -1; /* behind content */
 }
 
+/*NAVIGATION*/
 .top-nav a {
     font-size: 1.2rem;
     font-weight: bold;
@@ -32,29 +33,7 @@ body::before {
     color: #ffffff;
 }
 
-/* Footer style */
-footer {
-    background-color: rgba(180, 178, 178, 0.7); /* semi-transparent footer */
-    color: rgb(255, 255, 255);
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-/* Footer icons and text side by side */
-footer div {
-    display: flex;           /* put icon and text in a row */
-    align-items: center;     /* vertically center them */
-    gap: 10px;               /* space between icon and text */
-}
-
-footer div img {
-    width: 50px;             /* size of the icon */
-    height: auto;            /* maintain aspect ratio */
-}
-
-/* Logo style */
+/*LOGO*/
 .logo-container img {
     width: 1000px;
 }
@@ -63,5 +42,27 @@ footer div img {
     color: #1A1A1A;
     font-size: 3rem;
     margin: 10px 0 0 0;
+}
+
+/*FOOTER*/
+footer {
+    background-color: rgba(180, 178, 178, 0.7); /* semi-transparent footer */
+    color: #ffffff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Footer icons and text side by side */
+footer div {
+    display: flex;           /* icon and text in a row */
+    align-items: center;     /* vertically centered */
+    gap: 10px;               /* space between icon and text */
+}
+
+footer div img {
+    width: 50px;             /* size of the icon */
+    height: auto;            /* maintain aspect ratio */
 }
 

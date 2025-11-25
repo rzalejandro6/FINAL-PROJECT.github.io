@@ -1,48 +1,51 @@
+/*BODY*/
 body {
-    display: flex;                  /* Makes the body a flex container */
-    justify-content: center;        /* Centers content horizontally */
-    align-items: center;            /* Centers content vertically */
-    height: 100vh;                  /* Makes body take full height of the viewport */
-    margin: 0;                      /* Removes default margin from body */
-    background-color: #bebebe;      /* Sets light gray background color */
+    display: flex;                  
+    justify-content: center;        
+    align-items: center;            
+    height: 100vh;                  
+    margin: 0;                      
+    background-color: #bebebe;      
 }
 
+/*WRAPPER*/
 .wrapper {
-    display: grid;                  /* Makes the wrapper a grid container */
-    grid-template-rows: auto auto auto auto; /* Creates 4 rows sized automatically */
-    justify-items: center;          /* Centers items horizontally within each grid cell */
-    row-gap: 20px;                  /* Adds 20px vertical space between rows */
-    width: 80%;                     /* Wrapper takes 80% of the page width */
-    max-width: 400px;               /* Limits wrapper width to 400px */
-    padding: 20px;                  /* Adds inner spacing inside wrapper */
-    background-color: #adadad;      /* Sets wrapper background to a darker gray */
-    border-radius: 12px;            /* Rounds the corners of the wrapper */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Adds subtle shadow for depth */
+    display: grid;                  
+    grid-template-rows: auto auto auto auto; 
+    justify-items: center;          
+    row-gap: 20px;                  
+    width: 80%;                     
+    max-width: 400px;               
+    padding: 20px;                  
+    background-color: #adadad;      
+    border-radius: 12px;            
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
 }
 
+/*LOGIN FORM*/
 .login-form {
-    display: grid;                  /* Makes the login form a grid container */
-    justify-items: center;          /* Centers inputs and button horizontally */
-    row-gap: 15px;                  /* Adds vertical space between form elements */
-    width: 100%;                    /* Form takes full width of wrapper */
+    display: grid;                  
+    justify-items: center;          
+    row-gap: 15px;                  
+    width: 100%;                    
 }
 
 .login-form input {
-    width: 100%;                    /* Input fields take full width of the form */
-    padding: 10px;                  /* Adds space inside inputs */
-    border-radius: 8px;             /* Rounds input corners */
-    border: none;                   /* Removes default input border */
-    font-size: 1rem;                /* Sets font size of input text */
+    width: 100%;                    
+    padding: 10px;                  
+    border-radius: 8px;             
+    border: none;                   
+    font-size: 1rem;                
 }
 
 .login-form button {
-    width: 100%;                    /* Button takes full width of the form */
-    padding: 12px;                  /* Adds space inside button */
-    border: none;                   /* Removes default border */
-    border-radius: 8px;             /* Rounds button corners */
-    font-weight: bold;              /* Makes button text bold */
-    font-size: 1rem;                /* Sets button text size */
-    cursor: pointer;                /* Changes cursor to pointer on hover */
-    background-color: #232835;      /* Sets button background color */
-    color: #B6BDD0;                 /* Sets button text color */
+    width: 100%;                    
+    padding: 12px;                  
+    border: none;                   
+    border-radius: 8px;             
+    font-weight: bold;              
+    font-size: 1rem;                
+    cursor: pointer;                
+    background-color: #232835;      
+    color: #B6BDD0;                 
 }

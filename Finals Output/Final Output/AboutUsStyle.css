@@ -1,6 +1,3 @@
-/* ===========================
-   GLOBAL
-=========================== */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -8,20 +5,14 @@ body {
     margin: 0;
 }
 
-
-/* ===========================
-   NAVIGATION
-=========================== */
-.top-nav {
-    margin-bottom: 40px;
-}
-
+/* NAVIGATION*/
 .top-nav {
     display: flex;
     justify-content: center;
     gap: 200px;
     padding: 20px;
-    background-color: rgb(180, 178, 178, 0.7);
+    margin-bottom: 40px;
+    background-color: rgba(180, 178, 178, 0.7);
 }
 
 .top-nav a {
@@ -36,6 +27,7 @@ body {
     color: #ffffff;
 }
 
+/*ABOUT TEXT LINKS*/
 .about-text a {
     color: #ffffff;
 }
@@ -44,19 +36,16 @@ body {
     color: #b3b0b0;
 }
 
-
-/* ===========================
-   FOOTER
-=========================== */
+/*FOOTER*/
 footer {
     margin-top: 40px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    background-color: rgb(180, 178, 178, 0.7);
-    color: #fff;
     flex-wrap: wrap;
+    background-color: rgba(180, 178, 178, 0.7);
+    color: #ffffff;
 }
 
 footer .footer-item {
@@ -69,5 +58,3 @@ footer .footer-item {
 footer p {
     margin: 5px;
 }
-
-

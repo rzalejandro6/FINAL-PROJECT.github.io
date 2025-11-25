@@ -1,9 +1,12 @@
+//ELEMENT SELECTION//
 const viewport = document.getElementById('viewport');
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
 const columns = Array.from(document.querySelectorAll('.column'));
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
 
-// Navigation buttons
+//COLUMN NAVIGATION// 
 function scrollToColumn(index) {
   const x = columns[index].offsetLeft;
   viewport.scrollTo({ left: x, top: 0, behavior: 'smooth' });
@@ -13,10 +16,15 @@ function getCurrentColumnIndex() {
   const left = viewport.scrollLeft;
   let nearest = 0;
   let bestDelta = Infinity;
+
   columns.forEach((col, i) => {
     const delta = Math.abs(col.offsetLeft - left);
-    if (delta < bestDelta) { bestDelta = delta; nearest = i; }
+    if (delta < bestDelta) {
+      bestDelta = delta;
+      nearest = i;
+    }
   });
+
   return nearest;
 }
 
@@ -24,12 +32,13 @@ nextBtn.addEventListener('click', () => {
   const idx = Math.min(getCurrentColumnIndex() + 1, columns.length - 1);
   scrollToColumn(idx);
 });
+
 prevBtn.addEventListener('click', () => {
   const idx = Math.max(getCurrentColumnIndex() - 1, 0);
   scrollToColumn(idx);
 });
 
-// Likes
+//LIKE BUTTONS//
 document.querySelectorAll('.like-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const span = btn.querySelector('span');
@@ -37,12 +46,13 @@ document.querySelectorAll('.like-btn').forEach(btn => {
   });
 });
 
-// Comments
+//COMMENTS//
 document.querySelectorAll('.comment-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const input = btn.previousElementSibling;
     const list = btn.parentElement.querySelector('.comment-list');
-    if(input.value.trim() !== '') {
+
+    if (input.value.trim() !== '') {
       const p = document.createElement('p');
       p.textContent = input.value;
       list.appendChild(p);
@@ -51,10 +61,7 @@ document.querySelectorAll('.comment-btn').forEach(btn => {
   });
 });
 
-// Image modal
-const modal = document.getElementById('imageModal');
-const modalImg = document.getElementById('modalImg');
-
+//IMAGE MODAL// 
 document.querySelectorAll('.photo-card img').forEach(img => {
   img.addEventListener('click', () => {
     modal.style.display = 'flex';
@@ -63,5 +70,7 @@ document.querySelectorAll('.photo-card img').forEach(img => {
 });
 
 modal.addEventListener('click', e => {
-  if(e.target !== modalImg) modal.style.display = 'none';
+  if (e.target !== modalImg) {
+    modal.style.display = 'none';
+  }
 });

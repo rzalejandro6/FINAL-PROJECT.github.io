@@ -1,4 +1,4 @@
-/* Body grid layout */
+/*BODY GRID LAYOUT*/
 body {
     display: grid;
     grid-template-rows: auto 1fr auto; /* top-nav / main content / footer */
@@ -6,19 +6,17 @@ body {
     margin: 0;
 }
 
-.top-nav {
-    margin-bottom: 40px;
-}
-
+/*NAVIGATION*/
 .top-nav {
     display: flex;
     justify-content: center;
     gap: 200px;
     padding: 20px;
-    background-color: rgb(180, 178, 178, 0.7);
+    margin-bottom: 40px;
+    background-color: rgba(180, 178, 178, 0.7);
 }
 
-/* Center logo container */
+/*LOGO CONTAINER*/
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -26,7 +24,7 @@ body {
     align-items: center;
 }
 
-/* Footer placement */
+/*FOOTER*/
 footer {
     display: flex;
     justify-content: space-around;
@@ -34,4 +32,5 @@ footer {
     padding: 20px;
     flex-shrink: 0;
 }
+
 

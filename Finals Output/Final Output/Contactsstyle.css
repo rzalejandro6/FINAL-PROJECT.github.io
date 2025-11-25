@@ -1,0 +1,74 @@
+/* HEADINGS AND PARAGRAPHS*/
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/*FORM GROUP*/
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* LABELS*/
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* INPUTS AND TEXTAREA*/
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/*BUTTON*/
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*CONTACT DETAILS*/
+.contact-details {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+
+.detail-item {
+    margin-bottom: 10px;
+}
+
+/*NAVIGATION LINKS*/
+.top-nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #232835;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: #ffffff;
+}

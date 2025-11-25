@@ -1,3 +1,4 @@
+/*BODY*/
 body {
     display: flex;                  /* Makes the body a flex container */
     justify-content: center;        /* Centers the container horizontally on the page */
@@ -5,6 +6,7 @@ body {
     height: 100vh;                  /* Makes the body take the full height of the viewport */
 }
 
+/*CONTAINER*/
 .container {
     display: grid;                  /* Makes the container a grid layout */
     grid-template-rows: auto auto auto auto; /* Creates 4 rows, each sized automatically based on content */
