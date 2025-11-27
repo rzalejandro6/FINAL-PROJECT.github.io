@@ -12,7 +12,7 @@ form.addEventListener('submit', function(e) {
     // Check if both fields are filled
     if (email && password) {
         alert('You have created an account!');
-        window.location.href = "login.html"; // Redirect to login page
+        window.location.href = "LogIn.html"; // Redirect to login page
     } else {
         alert('Please fill out all fields.');
     }
