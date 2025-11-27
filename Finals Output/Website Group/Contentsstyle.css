@@ -12,6 +12,11 @@ body, html {
     overflow: hidden;
 }
 
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
 /*NAVIGATION LINKS*/
 .top-nav a {
     font-size: 1.2rem;
@@ -98,7 +103,7 @@ header.genre p {
 .caption {
     padding: 10px;
     font-size: 0.95rem;
-    color: #222;
+    color: #dddddd;
 }
 
 /*LIKE AND COMMENTS*/

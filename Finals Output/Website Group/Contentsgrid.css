@@ -26,7 +26,7 @@ body {
 
 /* COLUMN*/
 .column {
-    flex: 0 0 100vw;  /* Each column takes full viewport width */
+    flex: 0 0 100vw;  
     overflow-y: auto;
 }
 
