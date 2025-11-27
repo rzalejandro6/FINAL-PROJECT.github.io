@@ -11,7 +11,7 @@ form.addEventListener('submit', function(e) {
     // Check if both fields are filled
     if (email && password) {
         alert("You have successfully logged in!");
-        window.location.href = "HOMEPAGE.html"; // Redirect to homepage
+        window.location.href = "index.html"; // Redirect to homepage
     } else {
         alert("Please fill out all fields.");
     }
